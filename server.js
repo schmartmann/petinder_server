@@ -5,6 +5,7 @@ app.use("/", express.static(__dirname + '/build'));
 var port = process.env.PORT || 3002;
 
 app.listen(port, function () {
+  console.log('this is the port: ', port); 
   console.log('petinder server now online!');
 });
 
