@@ -17,27 +17,21 @@ body {
 .nav-items {
   background-color: white;
   box-shadow: none;
-  display: flex;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  flex-direction: row;
+  position: relative;
+  /*flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  margin: 20px 0;
+  justify-content: center;*/
 }
 
-#paw-icon{
+#paw-icon {
   position: absolute;
-  margin: 0 auto;
+  width: 50%;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/*.petcard-container{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}*/
 
 .pet-card {
   position: relative;
@@ -172,12 +166,12 @@ body {
 
 
   #paw-icon {
-    margin: 0 auto;
+    top: 10px;
   }
 
-  .pet-card {
-    height: 100%;
-    width: 80%;
+  .container {
+    height: auto;
+    width: auto;
   }
 
   .icons-row {
@@ -188,12 +182,12 @@ body {
 
 @media only screen and (min-width: 375px) and (max-width: 413px){
   #paw-icon {
-    margin: 0 auto;
+    top: 10px;
   }
 
-  .pet-card {
-    height: 100%;
-    width: 80%;
+  .container {
+    height: auto;
+    width: auto;
   }
 
   .icons-row {
@@ -203,17 +197,17 @@ body {
 }
 
 @media only screen and (min-width: 413px) and (max-width: 785px){
-  /*#paw-icon {
-    zoom: 0.75;
-    margin: 0 22%;
-  }*/
-
-  .pet-card {
-    width: 65%;
+  #paw-icon {
+    top: 10px; 
   }
 
-  /*.icons-row {
+  .container {
+    height: auto;
+    width: auto;
+  }
+
+  .icons-row {
     margin: -5% 36%;
     height: 90px;
-  }*/
+  }
 }
